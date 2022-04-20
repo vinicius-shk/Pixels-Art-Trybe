@@ -28,6 +28,16 @@ function criaPixel(repetições) {
         
     }
 }
+filhosPaletaCores[0].addEventListener('click', defineClasse);
+filhosPaletaCores[1].addEventListener('click', defineClasse);
+filhosPaletaCores[2].addEventListener('click', defineClasse);
+filhosPaletaCores[3].addEventListener('click', defineClasse);
+function defineClasse(evento) {
+    for (let key in filhosPaletaCores) {
+        filhosPaletaCores[key].className = 'color';
+    }
+    evento.target.classList.add('selected');
+}
 window.onload = function () {
 coresSeletor();
 criaPixel(25);
