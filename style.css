@@ -23,3 +23,19 @@ body {
     left: 300px;
     font-size: large ;
 }
+#pixel-board {
+    border: solid black 1px;
+    margin-top: 5%;
+    height: 400px;
+    width: 400px;
+    margin-left: 2%;
+}
+.pixel {
+    height: 78px;
+    width: 78px;
+    margin: 0px 0px 0px;
+    padding: 0px;
+    border: solid black 1px;
+    background-color: white;
+    float: left;
+}

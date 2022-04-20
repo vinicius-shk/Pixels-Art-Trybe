@@ -2,6 +2,7 @@ const paletaCores = document.getElementById('color-palette');
 const filhosPaletaCores = paletaCores.children;
 const listaCores = document.getElementById('lista-cores');
 const itensListaCores = listaCores.children;
+const quadroPixel = document.getElementById('pixel-board');
 let cores = ['red', 'blue', 'gray', 'silver', 'green', 'purple', 'yellow', 'brown', 'orange', 'pink'];
 function coresSeletor() {
     filhosPaletaCores[0].style.backgroundColor = 'black';
@@ -19,6 +20,15 @@ function coresSeletor() {
         cores.splice(sorteio, 1);
     }
 }
+function criaPixel(repetições) {
+    for (let index = 1; index <= repetições ; index += 1) {
+        let novoPixel = document.createElement('div');
+        novoPixel.className = 'pixel';
+        quadroPixel.appendChild(novoPixel);
+        
+    }
+}
 window.onload = function () {
 coresSeletor();
+criaPixel(25);
 }
