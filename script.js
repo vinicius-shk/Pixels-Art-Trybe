@@ -66,10 +66,22 @@ function reseta() {
 botaoVqv.addEventListener('click', resetaBoard);
 function resetaBoard() {
     if (inputUser.value !== '') {
+        if (inputUser.value < 5) {
+            quadroPixel.innerHTML = '';
+        quadroPixel.style.height = (42 * 5) + 'px';
+        quadroPixel.style.width = (42 * 5) + 'px';
+        criaPixel(5 ** 2);
+        } else if (inputUser.value > 50) {
+            quadroPixel.innerHTML = '';
+        quadroPixel.style.height = (42 * 50) + 'px';
+        quadroPixel.style.width = (42 * 50) + 'px';
+        criaPixel(50 ** 2);
+        } else {
         quadroPixel.innerHTML = '';
         quadroPixel.style.height = (42 * inputUser.value) + 'px';
         quadroPixel.style.width = (42 * inputUser.value) + 'px';
         criaPixel(inputUser.value ** 2);
+        }
     } else {
         alert('Board inválido!');
     }
