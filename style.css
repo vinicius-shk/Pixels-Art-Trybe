@@ -39,3 +39,8 @@ body {
     background-color: white;
     float: left;
 }
+#clear-board {
+    position: absolute;
+    top: 170px;
+    left: 100px;
+}

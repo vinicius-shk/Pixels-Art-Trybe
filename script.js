@@ -40,13 +40,27 @@ function defineClasse(evento) {
     evento.target.classList.add('selected');
 }
 document.body.addEventListener('click', pintura) 
-    function pintura(evento) {
-        for (let key = 0; key < pixelQuadro.length; key += 1) {
-            if (evento.target === pixelQuadro[key]) {
-            evento.target.style.backgroundColor = document.querySelector('.selected').style.backgroundColor;
-            }
+function pintura(evento) {
+    for (let key = 0; key < pixelQuadro.length; key += 1) {
+        if (evento.target === pixelQuadro[key]) {
+        evento.target.style.backgroundColor = document.querySelector('.selected').style.backgroundColor;
         }
     }
+}
+function criaElemento(tipo, texto, seletor, nomeSeletor) {
+    let elemento = document.createElement(tipo);
+    elemento.innerHTML = texto;
+    elemento.setAttribute(seletor, nomeSeletor);
+    document.body.appendChild(elemento);
+}
+criaElemento('button', 'Limpar', 'id', 'clear-board');
+const botao = document.getElementById('clear-board');
+botao.addEventListener('click', reseta);
+function reseta() {
+    for (let key = 0; key < pixelQuadro.length; key += 1) {
+        pixelQuadro[key].style.backgroundColor = 'white';
+    }
+}
 window.onload = function () {
 coresSeletor();
 criaPixel(25);
