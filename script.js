@@ -4,6 +4,8 @@ const listaCores = document.getElementById('lista-cores');
 const itensListaCores = listaCores.children;
 const quadroPixel = document.getElementById('pixel-board');
 const pixelQuadro = quadroPixel.children;
+const inputUser = document.getElementById('board-size');
+const botaoVqv = document.getElementById('generate-board');
 let cores = ['red', 'blue', 'gray', 'silver', 'green', 'purple', 'yellow', 'brown', 'orange', 'pink'];
 function coresSeletor() {
     filhosPaletaCores[0].style.backgroundColor = 'black';
@@ -39,7 +41,7 @@ function defineClasse(evento) {
     }
     evento.target.classList.add('selected');
 }
-document.body.addEventListener('click', pintura) 
+document.body.addEventListener('click', pintura);
 function pintura(evento) {
     for (let key = 0; key < pixelQuadro.length; key += 1) {
         if (evento.target === pixelQuadro[key]) {
@@ -59,6 +61,17 @@ botao.addEventListener('click', reseta);
 function reseta() {
     for (let key = 0; key < pixelQuadro.length; key += 1) {
         pixelQuadro[key].style.backgroundColor = 'white';
+    }
+}
+botaoVqv.addEventListener('click', resetaBoard);
+function resetaBoard() {
+    if (inputUser.value !== '') {
+        quadroPixel.innerHTML = '';
+        quadroPixel.style.height = (42 * inputUser.value) + 'px';
+        quadroPixel.style.width = (42 * inputUser.value) + 'px';
+        criaPixel(inputUser.value ** 2);
+    } else {
+        alert('Board inválido!');
     }
 }
 window.onload = function () {

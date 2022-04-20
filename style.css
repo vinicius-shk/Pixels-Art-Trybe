@@ -25,7 +25,7 @@ body {
 }
 #pixel-board {
     border: solid black 1px;
-    margin-top: 5%;
+    margin-top: 9%;
     height: 210px;
     width: 210px;
     margin-left: 2%;
@@ -43,4 +43,9 @@ body {
     position: absolute;
     top: 170px;
     left: 100px;
+}
+#tamanhoQuadro {
+    position: absolute;
+    left: 25px;
+    top: 210px;
 }
