@@ -31,4 +31,5 @@ function criaPixel(repetições) {
 window.onload = function () {
 coresSeletor();
 criaPixel(25);
+filhosPaletaCores[0].classList.add('selected');
 }
