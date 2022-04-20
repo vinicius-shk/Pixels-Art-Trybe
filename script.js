@@ -14,7 +14,7 @@ function coresSeletor() {
     itemLista.style.color = 'black';
     itensListaCores[0].appendChild(itemLista);
     for (index = 1; index < filhosPaletaCores.length; index += 1) {
-        let sorteio = Math.floor(Math.random()* (10 - [index]));
+        let sorteio = Math.floor(Math.random()* (11 - [index]));
         filhosPaletaCores[index].style.backgroundColor = cores[sorteio];
         let itemLista = document.createElement('li');
         itemLista.innerHTML = cores[sorteio];
