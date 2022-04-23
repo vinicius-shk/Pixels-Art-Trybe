@@ -6,21 +6,21 @@ const quadroPixel = document.getElementById('pixel-board');
 const pixelQuadro = quadroPixel.children;
 const inputUser = document.getElementById('board-size');
 const botaoVqv = document.getElementById('generate-board');
-let cores = ['red', 'blue', 'gray', 'silver', 'green', 'purple', 'yellow', 'brown', 'orange', 'pink'];
+const cor = ['red', 'blue', 'gray', 'silver', 'green', 'purple', 'yellow', 'brown', 'orange', 'pink'];
 function coresSeletor() {
-    filhosPaletaCores[0].style.backgroundColor = 'black';
-    let itemLista = document.createElement('li');
-    itemLista.innerHTML = 'black';
-    itemLista.style.color = 'black';
-    itensListaCores[0].appendChild(itemLista);
-    for (index = 1; index < filhosPaletaCores.length; index += 1) {
+  filhosPaletaCores[0].style.backgroundColor = 'black';
+  const itemLista = document.createElement('li');
+  itemLista.innerHTML = 'black';
+  itemLista.style.color = 'black';
+  itensListaCores[0].appendChild(itemLista);
+  for (index = 1; index < filhosPaletaCores.length; index += 1) {
         let sorteio = Math.floor(Math.random()* (11 - [index]));
-        filhosPaletaCores[index].style.backgroundColor = cores[sorteio];
+        filhosPaletaCores[index].style.backgroundColor = cor[sorteio];
         let itemLista = document.createElement('li');
-        itemLista.innerHTML = cores[sorteio];
-        itemLista.style.color = cores[sorteio];
+        itemLista.innerHTML = cor[sorteio];
+        itemLista.style.color = cor[sorteio];
         itensListaCores[0].appendChild(itemLista);
-        cores.splice(sorteio, 1);
+        cor.splice(sorteio, 1);
     }
 }
 function criaPixel(repetições) {
