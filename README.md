@@ -1,10 +1,29 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Pixels Art
+
+Projeto Pixels Art é uma página web que possibilita o usuário criar arte pixeladas em um quadro de tamanho variável com uma seleção aleatórias de cores a sua disposição.
+
+Acesse [aqui](https://pixels-art-trybe-vinicius-shk.vercel.app/) uma versão com deploy realizado para testar.
+
+### Tecnologias utilizadas
+
+- **HTML**
+- **Javascript**
+- **CSS**
+
+### Para rodar localmente
+
+Clone o projeto para o seu repositório local.
+
+```
+git clone git@github.com:vinicius-shk/Pixels-Art-Trybe.git
+
+```
+
+Acesse a raiz do projeto e rode os comandos para instalar as dependências
+
+```
+cd Pixels-Art-Trybe && npm i
+
+```
+
+Inicie o Live Server para HTML
