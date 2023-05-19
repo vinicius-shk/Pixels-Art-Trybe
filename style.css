@@ -20,7 +20,7 @@ body {
 #lista-cores {
     position: absolute;
     top: 60px;
-    left: 300px;
+    left: 330px;
     font-size: large ;
 }
 #pixel-board {
@@ -38,6 +38,10 @@ body {
     border: solid black 1px;
     background-color: white;
     float: left;
+    transition: 0.3s;
+}
+.pixel:hover {
+    background-color: gray;
 }
 #clear-board {
     position: absolute;
