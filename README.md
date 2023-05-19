@@ -1,6 +1,6 @@
 # Pixels Art
 
-Projeto Pixels Art é uma página web que possibilita o usuário criar arte pixeladas em um quadro de tamanho variável com uma seleção aleatórias de cores a sua disposição.
+Projeto Pixels Art é uma página web que possibilita o usuário criar arte pixeladas em um quadro de tamanho variável com uma seleção aleatórias de cores a sua disposição. Troque as cores clicando nas cores na paleta.
 
 Acesse [aqui](https://pixels-art-trybe-vinicius-shk.vercel.app/) uma versão com deploy realizado para testar.
 
